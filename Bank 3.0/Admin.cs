@@ -8,8 +8,8 @@
             int num = 0;
             while (gameOver == false) 
             {
-                Console.Write("Användarnamn Admin : ");
-                Inlogg = Console.ReadLine().ToLower();
+                Console.Write("Användarnamn Admin : ");  //användarnamn: admin och lösen: admin
+                Inlogg = Console.ReadLine().ToLower(); // ToLower = code that allows one to use lowercase and uppercase letters
                 Console.Write("Password Admin : ");
                 Pass = Console.ReadLine().ToLower();
                 num++;
@@ -99,6 +99,7 @@
             Console.WriteLine("------------------");
             Console.WriteLine("Tryck Enter för att återvända till start");
             Console.ReadKey();
+
         }
 
     }

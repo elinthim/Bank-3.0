@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Bank_3._0
 {
-    internal partial class MyBank
-
+    internal partial class MyBank // Single class into multiple files and all these files are combined into a single class file when the application is compiled.
+                                  //  A partial class is created by using a partial keyword.
     {
-        public void start()
+        public void start() 
         {
 
             while (true)
@@ -24,7 +24,7 @@ namespace Bank_3._0
                 Console.WriteLine("---------------------------------");
                 Console.Write("Knappa in ditt val : ");
                 int input = checkNr();
-                Console.Clear();
+                Console.Clear(); 
 
                 switch (input)
                 {
@@ -47,7 +47,7 @@ namespace Bank_3._0
                 }
             }
         }
-        public int checkNr()
+        public int checkNr() 
         {
             int nr;
             while (!int.TryParse(Console.ReadLine(), out nr))

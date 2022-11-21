@@ -2,17 +2,17 @@
 {
     internal partial class MyBank
     {
-        string inlogg;
+        string inlogg; //incapsulation
         string pass;
 
-        Random randomAc = new Random();
+        Random randomAc = new Random(); // randomizes bank account number in method addAccount()
         public int number3;
 
         public List<string> userList = new List<string>();
         public List<string> passList = new List<string>();
-        public List<int> bankList = new List<int>();
+        public List<int> bankList = new List<int>(); 
 
-        public string Pass
+        public string Pass  
         {
             get => pass;
             set => pass = value;
@@ -25,7 +25,7 @@
 
         public void customerinlog()
         {
-            bool check = false;
+            bool check = false; 
             int num = 0;
             while (check == false)
             {
@@ -35,8 +35,8 @@
                 Pass = Console.ReadLine();
                 num++;
 
-                var userfound = userList.Find(i => i.Equals(Inlogg));
-                var userfound1 = passList.Find(i => i.Equals(Pass));
+                var userfound = userList.Find(i => i.Equals(Inlogg)); // checks if usernames and passwords match each other. 
+                var userfound1 = passList.Find(i => i.Equals(Pass));  
 
                 if (userfound == Inlogg && userfound1 == Pass)
                 {
@@ -62,7 +62,7 @@
                 {
                     Console.Clear();
                     Console.WriteLine("Va fan, jag sa ju till dig!!. Nu loggas du ut!");
-                    check = true;
+                    check = true; 
                 }
             }
         }
@@ -76,7 +76,7 @@
                 Console.WriteLine("2. Valuta ");
                 Console.WriteLine("3. Se mina bankkonton");
                 Console.WriteLine("4. Logga ut");
-                int adminInput = checkNr();
+                int adminInput = checkNr(); 
                 if (adminInput == 1)
                 {
                     addAccount();
@@ -93,7 +93,6 @@
                 {
                     Console.Clear();
                     break;
-
                 }
             }
 
@@ -133,7 +132,7 @@
             Console.Clear();
             number3 = randomAc.Next(1111111, 9999999);
 
-            Console.WriteLine("Vill du skapa ett nytt bankkonto tryck enter.\nAnnars vänta kvar så skickas du automatsikt tillbaka till huvudmenyn");
+            Console.WriteLine("Vill du skapa ett nytt bankkonto tryck enter.");
             Console.WriteLine("--------------------------------------------");
             Console.ReadKey();
             Console.WriteLine("Ditt nya kontonummer är : " + number3);
