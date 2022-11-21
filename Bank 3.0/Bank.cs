@@ -43,7 +43,6 @@ namespace Bank_3._0
                         Console.WriteLine("Fel val av siffra, tryck Enter för att fortsätta");
                         Console.ReadKey();
                         Console.Clear();
-                        // start(); Recursive call. Embed inside a loop.
                         break;
                 }
             }

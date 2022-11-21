@@ -8,7 +8,6 @@
         Random randomAc = new Random();
         public int number3;
 
-        // TODO Strongly consider making a User class with username and password property.
         public List<string> userList = new List<string>();
         public List<string> passList = new List<string>();
         public List<int> bankList = new List<int>();
@@ -24,8 +23,7 @@
             set => inlogg = value;
         }
 
-        // OK! no recursive calls left.
-        public void customerinlog() // Entry point from nMenu in Admin
+        public void customerinlog()
         {
             bool check = false;
             int num = 0;
@@ -43,7 +41,7 @@
                 if (userfound == Inlogg && userfound1 == Pass)
                 {
                     usermeny();
-                    return; // Return to nMenu
+                    return;
                 }
                 else if (userfound != Inlogg && userfound1 != Pass)
                 {
@@ -51,11 +49,11 @@
                     Console.Clear();
                 }
 
-                if (num < 3)
+                if (num < 2)
                 {
                     Console.WriteLine("Fel inmatning igen, skärp dig!");
                 }
-                else if (num == 3)
+                else if (num == 2)
                 {
                     Console.Clear();
                     Console.WriteLine("Nu har du ett försök kvar!!");
@@ -67,7 +65,6 @@
                     check = true;
                 }
             }
-            // return to nMenu in Admin.
         }
         public void usermeny()
         {
@@ -82,7 +79,7 @@
                 int adminInput = checkNr();
                 if (adminInput == 1)
                 {
-                    addAccount(); 
+                    addAccount();
                 }
                 else if (adminInput == 2)
                 {
@@ -99,9 +96,6 @@
 
                 }
             }
-
-            // OK! no recursive calls left.
-
 
         }
         public void banksaldo()
