@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Bank_3._0
 {
@@ -38,6 +39,7 @@ namespace Bank_3._0
                         Console.Clear();
                         Console.WriteLine("Tack för idag");
                         Console.ReadKey();
+                        System.Environment.Exit(0);
                         break;
                     default:
                         Console.WriteLine("Fel val av siffra, tryck Enter för att fortsätta");
