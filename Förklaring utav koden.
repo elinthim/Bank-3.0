@@ -11,7 +11,14 @@ Method addUser contains a function where you can create a user.
 Method checkUser a function where you can see all created users.
 
 The third class is called Private and has an internal partial class called: Mybank.
-The Private class contains 3 properties, inlogg, pass, number3, and 3 lists, UserList, passList, bankList, and 4 methods, customerinlogg, usermenu, bankBalance, currency, addAccount.
+The Private class contains 3 properties, inlogg, pass, number3, and 3 lists, userList, passList, bankList, and 4 methods, customerinlogg, usermenu, bankBalance, currency, addAccount.
 The property inlogg saves the given username from the user and then returns the value.
 The property pass saves the given password from the user and then returns the value.
-The property number3 
+The property number3 saves the random number generated and then returns the value.
+In the list userList are all usernames that are created saved in.
+In the list passList are all passwords that are created saved in.
+In the list bankList are all bank accounts that are created saved in.
+Method customerinlogg contains login function for customer/private users.
+Method usermenu contains a menu for the customer/private user.
+Method bankBalance is a function where private users can view their bank accounts and balance.
+Method currency is a function where you as a private user can see different currencies.
