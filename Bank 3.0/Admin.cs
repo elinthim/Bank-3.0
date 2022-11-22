@@ -32,8 +32,11 @@
                     }
                     else
                     {
-                      
+                        Console.Clear();
+                        Console.WriteLine();
                         Console.WriteLine("Va fan, jag sa ju till dig!!. Nu loggas du ut!");
+                        Console.ReadKey();
+                        Console.Clear();
                         break;
                     }
                 }
@@ -68,6 +71,7 @@
         }
         public void addUser() 
         {
+            Console.WriteLine("");
             try
             {
                 Console.Write("Skriv användarnamn : ");
@@ -92,6 +96,7 @@
         {
             Console.Clear();
             Console.WriteLine("Här kommer alla användare");
+            Console.WriteLine("------------------");
             foreach (var item in userList)
             {
                 Console.WriteLine(item);

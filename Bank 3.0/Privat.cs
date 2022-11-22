@@ -61,7 +61,10 @@
                 else
                 {
                     Console.Clear();
-                    Console.WriteLine("Va fan, jag sa ju till dig!!. Nu loggas du ut!");
+                    Console.WriteLine("");
+                    Console.WriteLine("Hur svårt ska det vara!!!, Hej då :)");
+                    Console.ReadKey();
+                    System.Environment.Exit(0);
                     check = true; 
                 }
             }
@@ -101,7 +104,7 @@
         {
             Random random = new Random();
 
-            Console.Clear();
+            Console.WriteLine("\n");
             Console.WriteLine("-----------------------------------------------");
             Console.WriteLine("Lista över dina kontonummer");
             Console.WriteLine("-----------------------------------------------");
@@ -117,6 +120,7 @@
         }
         public void currency()
         {
+            Console.WriteLine("");
             Console.WriteLine("----------------------------");
             Console.WriteLine("Euro : 10.82 skr\n" +
                               "USD : 10.43 skr\n" +
@@ -124,6 +128,8 @@
                               "NOK : 1.05 skr\n" +
                               "JPY : 7.49 skr");
             Console.WriteLine("----------------------------");
+
+            Console.ReadKey();
 
         }
 
