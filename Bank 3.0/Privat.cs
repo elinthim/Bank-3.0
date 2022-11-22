@@ -83,11 +83,11 @@
                 }
                 else if (adminInput == 2)
                 {
-                    valuta();
+                    currency();
                 }
                 else if (adminInput == 3)
                 {
-                    banksaldo();
+                    bankBalance();
                 }
                 else if (adminInput == 4)
                 {
@@ -97,7 +97,7 @@
             }
 
         }
-        public void banksaldo()
+        public void bankBalance()
         {
             Random random = new Random();
 
@@ -115,7 +115,7 @@
             Console.ReadKey();
             return;
         }
-        public void valuta()
+        public void currency()
         {
             Console.WriteLine("----------------------------");
             Console.WriteLine("Euro : 10.82 skr\n" +
